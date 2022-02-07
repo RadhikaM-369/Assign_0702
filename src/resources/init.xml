@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+	<bean id="charger" class="com.xworkz.charger.Charger">
+		<constructor-arg value="samsung"></constructor-arg>
+		<constructor-arg value="4500"></constructor-arg>
+		<property name="color" value="white"></property>
+		<property name="volt" value="25"></property>
+		<property name="working" value="true"></property>
+	</bean>
+	
+	<bean id="solarInfo" class="com.xworkz.solar.SolarInfo">
+		
+		<property name="capacity" value="300"></property>
+		<property name="brand" value="Luminous"></property>
+		<property name="price" value="25000"></property>
+		<property name="coldWater" value="false"></property>
+		
+	</bean>
+	
+	<bean id="toothPaste" class="com.xworkz.toothPaste.ToothPaste">
+		<constructor-arg value="Pepsodent"></constructor-arg>
+		<constructor-arg value="120"></constructor-arg>
+		<constructor-arg value="true"></constructor-arg>
+		<constructor-arg value="300.00"></constructor-arg>
+		
+		<property name="salt" value="true"></property>
+		<property name="brandAmbassador" value="Smriti Mandhana"></property>
+	</bean>
+
+	<bean id="upsInfo" class="com.xworkz.ups.UpsInfo">
+		<constructor-arg value="Microtek"></constructor-arg>
+		<constructor-arg value="line-Interactive"></constructor-arg>
+		<constructor-arg value="30"></constructor-arg>
+		<constructor-arg value="12.00"></constructor-arg>
+		<constructor-arg value="20.00"></constructor-arg>
+		<constructor-arg value="25000"></constructor-arg>
+	</bean>
+	
+	<bean id="electricCookTop" class="com.xworkz.cookTop.ElectricCookTop">
+		<property name="brand" value="Prestige"></property>
+		<property name="weight" value="15.00"></property>
+		<property name="color" value="Black"></property>
+		<property name="customer" value="Ranjana"></property>
+		<property name="warranty" value="5"></property>
+	</bean>
+
+
+</beans> 
